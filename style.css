@@ -1,276 +1,290 @@
+/* Variables para paleta de colores y tipografía */
+:root {
+  --primary-color: #4164a4;
+  --secondary-color: #34a3cb;
+  --white-color: #ffffff;
+  --gray-color: #666777;
+  --text-stroke-color: #7badd3;
+}
+
+/* Navbar */
 .navbar {
-  background-color: #ffffff;
+  background-color: var(--white-color);
   height: 80px;
   margin: 20px;
   border-radius: 16px;
   padding: 0.5rem;
   display: flex;
   align-items: center;
+  margin: 20px; /* Ajustable a tu gusto */
 }
-
+@media (max-width: 991px) {
+  .navbar {
+    margin: 0; 
+    border-radius: 0;
+  }
+  .logo-container img {
+    width: 50px;  /* Ajusta según el tamaño deseado */
+    height: auto;
+  }
+}
 .serv-boton {
-    background-color: #4164a4;
-    color: #fff;
-    font-size: 18px;
-    padding: 8px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    font-family: YuseiMagic-Regular;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-family: YuseiMagic-Regular;
 }
 
 .serv-boton:hover {
-    background-color: #34a3cb;
+  background-color: var(--secondary-color);
 }
 
 .navbar-toggler {
-    border: none;
-    font-size: 1.25rem;
+  border: none;
+  font-size: 1.25rem;
 }
 
 .navbar-toggler:focus, .btn-close:focus {
-    box-shadow: none;
-    outline: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .nav-link {
-    color: #666777;
-    font-weight: 500;
-    position: relative;
-    font-family: YuseiMagic-Regular;
-    font-size: 18px;
+  color: var(--gray-color);
+  font-weight: 500;
+  position: relative;
+  font-family: YuseiMagic-Regular;
+  font-size: 18px;
 }
 
 .nav-link:hover, .nav-link:active {
-    color: #000;
+  color: #000;
 }
 
 @media (min-width: 991px) {
-    .navbar-link::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 2px;
-        background-color: #34a3cb;
-        visibility: hidden;
-        transition: 0.3s ease-in-out;
-    }
-
-    .navbar-link:hover::before, .navbar-link:active::before {
-        width: 100%;
-        visibility: visible;
-    }
-}
-
-
-/* slider */
-.carousel {
-    max-width: 100%;
-    margin: 0 auto;
-    margin-top: 115px;
-    width: 97.7%;
-    border: 5px solid white;
-    box-sizing: border-box;
-    border-radius: 25px;
-    position: relative;
-  }
-  
-  .carousel-inner {
-    border-radius: 20px;
-  }
-  
-  .carousel-item img {
-    height: 650px;
-    object-fit: cover;
-    width: 100%;
-  }
-  
-  .carousel-item::before {
+  .navbar-link::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  .navbar-link:hover::before, .navbar-link:active::before {
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    visibility: visible;
   }
-/* TAMAÑO LOGO Y EFECTO DE AGRANDAR*/
-.logo-container {
-    padding-top: 15%;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 0.5rem;
-  }
-  
-  .logo-container img {
-    width: 175px;
-    height: 135px;
-    transition: transform 0.3s ease;
-  }
-  
-  .logo-container:hover img {
-    transform: scale(1.2);
-  }
-  /*TERMINA TAMAÑO LOGO Y EFECTO DE AGRANDAR*/ 
-
-  footer {
-    background: url('IMG/foto-index.jpg') no-repeat center center/cover;
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-columns {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  
-  .footer-column {
-    flex: 1;
-    min-width: 250px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center; /* Cambiado a centrado */
-    background: rgba(65, 100, 164, 0.9);
-    border-radius: 8px;
-  }
-  
-  .footer-column a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
-    transition: color 0.3s;
-  }
-  
-  .footer-column a:hover {
-    color: #00d8ff;
-  }
-  
-  .footer-column p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  
-  .footer-column p i {
-    margin-right: 8px;
-  }
-  
-  .socials {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 0;
-  }
-  
-  .socials li {
-    margin: 0 10px;
-  }
-  
-  .socials a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-  }
-  
-  .socials a:hover {
-    color: #00d8ff;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    width: 100%;
-  }
-  
-.footer-bottom p {
-    font-size: 0.9rem;
-  }
-  
-  
-
-
-  body {
-    background-image: url('IMG/Fondo-Japi.png');
-    background-repeat: repeat; /* La imagen se repetirá */
-    background-size: contain; /* Ajusta la imagen a su tamaño completo, sin deformarse */
-    background-position: center; /* Centra la imagen en cada repetición */
-    margin: 0;
-    padding: 0;
 }
-  
-  
-  @media (max-width: 1000px) {
-    .navbar {
-      height: auto;
-      padding: 0.5rem;
-    }
-  
-    .logo-container img {
-      width: 60px;
-      height: 60px;
-    }
-  
-    .navbar-brand {
-      font-size: 20px;
-    }
 
-    .serv-boton {
-      font-size: 12px;
-      padding: 6px 16px;
-    }
-  
-    .offcanvas-header {
-      padding: 1rem; 
-    }
-  
-    .offcanvas-body {
-      padding: 1rem;
-    }
+/* Slider / Carousel */
+.carousel {
+  max-width: 100%;
+  margin: 115px auto 0 auto;
+  width: 97.7%;
+  border: 5px solid var(--white-color);
+  box-sizing: border-box;
+  border-radius: 25px;
+  position: relative;
+}
+
+.carousel-inner {
+  border-radius: 20px;
+}
+
+.carousel-item img {
+  height: 650px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none; /* Importante */
+}
+
+.carousel-caption {
+  position: absolute; 
+  z-index: 2; /* encima del ::before */
+  /* estilos extra */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 3; /* flechas aún más arriba */
+}
+
+
+.logo-container {
+  padding-top: 15%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.logo-container img {
+  width: 175px;
+  height: 135px;
+  transition: transform 0.3s ease;
+}
+
+.logo-container:hover img {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  background: url('IMG/foto-index.jpg') no-repeat center center/cover;
+  color: var(--white-color);
+  font-family: "Open Sans", sans-serif;
+  padding: 40px 0 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background: rgba(65, 100, 164, 0.9);
+  border-radius: 8px;
+}
+
+.footer-column a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #00d8ff;
+}
+
+.footer-column p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #00d8ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+}
+
+/* Fondo global */
+body {
+  background-image: url('IMG/Fondo-Japi.png');
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive ajustes */
+@media (max-width: 1000px) {
+  .navbar {
+    height: auto;
+    padding: 0.5rem;
   }
-
-  .servicios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .logo-container img {
+    width: 60px;
+    height: 60px;
   }
-
-
-  .servicios h2 {
-    font-size: 2em;
-    color: white;
-    -webkit-text-stroke: 3px #7badd3;
-    font-family: MagicEnglish;
-    background-color: rgb(255, 255, 255); /* Mantener el color de fondo */
-    padding: 10px 20px; /* Ajustar el padding */
-    border-radius: 10px;
+  .navbar-brand {
+    font-size: 20px;
   }
-  
-/* galeria*/
+  .serv-boton {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+  .offcanvas-header, .offcanvas-body {
+    padding: 1rem;
+  }
+}
 
+/* Servicios */
+.servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios h2 {
+  font-size: 2em;
+  color: var(--white-color);
+  -webkit-text-stroke: 3px var(--text-stroke-color);
+  font-family: MagicEnglish;
+  background-color: var(--white-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Galería */
 #galeria-container {
   display: flex;
   justify-content: center;
@@ -281,11 +295,11 @@
 #galeria-container h2 {
   font-size: 2em;
   margin-top: 1%;
-  color: white;
-  -webkit-text-stroke: 3px #7badd3;
+  color: var(--white-color);
+  -webkit-text-stroke: 3px var(--text-stroke-color);
   font-family: MagicEnglish;
   padding: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white-color);
   border-radius: 10px;
 }
 
@@ -298,7 +312,7 @@
 }
 
 .gallery img {
-  width: 350px; /* Ajusta el tamaño según sea necesario */
+  width: 350px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
@@ -310,6 +324,7 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Overlay de la Galería */
 #overlay {
   display: none;
   position: fixed;
@@ -318,7 +333,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 10;
+  z-index: 9999; /* Aumenta el z-index para que esté por encima de otros elementos */
   transition: opacity 0.3s ease;
   justify-content: center;
   align-items: center;
@@ -335,7 +350,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  background: #fff;
+  background: var(--white-color);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -373,7 +388,7 @@
   background: rgba(255, 255, 255, 1);
 }
 
-/* sobre nosotros */
+/* About Us */
 .about-us-container {
   display: flex;
   justify-content: center;
@@ -388,11 +403,10 @@
   flex-wrap: wrap;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 5px solid white;
-  box-sizing: border-box;
+  border: 5px solid var(--white-color);
   border-radius: 25px;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .img-one,
@@ -410,81 +424,45 @@
 .img-one img {
   width: 100%;
   max-height: 500px;
-  display: block;
   object-fit: cover;
 }
 
 .text-blk {
-  margin: 0 0 20px;
-}
-
-.section-head {
-  font-size: 24px;
-  font-weight: bold;
+  font-family: MagicEnglish;
+  font-size: 35px;
+  color: var(--white-color);
+  -webkit-text-stroke: 2px var(--text-stroke-color);
   margin-bottom: 20px;
 }
 
-.section-text {
-  font-size: 16px;
-  line-height: 1.6;
+.titulo {
+  font-family: MagicEnglish;
+  -webkit-text-stroke: 2px var(--text-stroke-color);
 }
 
-.carousel-caption {
-  position: absolute;
-  top: 20%;
-  left: 17%;
-  right: auto;
-  bottom: auto;
-  z-index: 1;
-  text-align: left;
-  color: white
+.text, .subtexto {
+  font-family: YuseiMagic-Regular;
 }
 
-.carousel-caption h5 {
-  font-size: 3rem;
-  font-weight: bold;
-  z-index: 1;
-}
-
-.carousel-caption p {
-  font-size: 1.5rem;
-  z-index: 1;
-}
-
-.carousel-caption a {
-  font-size: 1.5rem;
-  padding: 0.5rem 3rem;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  z-index: 1;
-}
-
-.carousel-caption a:hover {
-  background-color: darkgray;
-}
-
-/* carrusel cards */
-
+/* Carrusel Cards */
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the items horizontally */
+  justify-content: center;
   gap: 20px;
-  max-width: 100%; /* Ensure the container takes up the full width available */
-  margin: 0 auto; /* Center the container */
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .card {
-  background: #ffffff;
+  background: var(--white-color);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s;
-  width: calc(100% / 3 - 20px); /* Adjust the width to fit three cards per row with gaps */
-  max-width: 300px; /* Set a maximum width for each card */
-  flex: 1 1 300px; /* Allow the card to grow and shrink */
+  width: calc(100% / 3 - 20px);
+  max-width: 300px;
+  flex: 1 1 300px;
 }
 
 .card:hover {
@@ -513,6 +491,7 @@
   line-height: 1.5;
 }
 
+/* Fuentes personalizadas */
 @font-face {
   font-family: MagicEnglish;
   src: url(fuentes/MagicEnglish.ttf);
@@ -522,26 +501,7 @@
   src: url(fuentes/YuseiMagic-Regular.ttf);
 }
 
-.text-blk {
-  font-family: MagicEnglish;
-  font-size: 35px;
-  color: white;
-  -webkit-text-stroke: 2px #7badd3;
-}
-
-.titulo {
-  font-family: MagicEnglish;
-  -webkit-text-stroke: 2px #7badd3;
-}
-
-.text {
-  font-family: YuseiMagic-Regular;
-}
-
-.subtexto {
-  font-family: YuseiMagic-Regular;
-}
-
+/* Precios */
 #precios-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -560,8 +520,8 @@ h2 {
 }
 
 .precio-card {
-  background-color: #4164a4;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
@@ -585,7 +545,7 @@ h2 {
 .descripcion {
   flex: 1;
   padding-right: 10px;
-  font-family: YuseiMagic-Regular
+  font-family: YuseiMagic-Regular;
 }
 
 .precio {
@@ -597,10 +557,10 @@ h2 {
 
 .precios h2 {
   font-size: 2em;
-  color: white;
-  -webkit-text-stroke: 3px #7badd3;
+  color: var(--white-color);
+  -webkit-text-stroke: 3px var(--text-stroke-color);
   font-family: MagicEnglish;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white-color);
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -611,9 +571,10 @@ h2 {
   align-items: center;
 }
 
+/* Cumpleaños Card */
 #cumple-card {
-  background-color: #4164a4;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   position: relative;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -624,7 +585,6 @@ h2 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-
 #cumple-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
@@ -633,10 +593,9 @@ h2 {
 .toggle-button {
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
-  color: white;
+  color: var(--white-color);
   padding: 10px 15px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 10px 0;
@@ -675,46 +634,19 @@ h2 {
   border-bottom: none;
 }
 
-.custom-overlay {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.custom-overlay-content {
-  background-color: white;
-  margin: 15% auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 500px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.close-overlay {
-  cursor: pointer;
-  font-size: 24px;
-  float: right;
-}
-
+/* Botón Custom */
 .custom-btn {
-  background-color: #4164a4;
+  background-color: var(--primary-color);
   border: none;
   border-radius: 8px;
-  color: white;
+  color: var(--white-color);
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.2s ease; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .custom-btn:hover {
-  background-color: #4164a4;
+  background-color: var(--primary-color);
   transform: scale(1.05);
 }
 

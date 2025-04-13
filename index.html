@@ -1,34 +1,78 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Japimax - Bowling - Juegos - Eventos Privados</title>
-  <meta name="description"
-    content="Japimax es tu destino ideal para el bowling y eventos familiares. Descubre nuestras promociones y servicios en Republica y Grajales.">
-  <meta name="keywords"
-    content="bowling, Japimax, eventos familiares, Republica, Grajales, promociones, deportes, diversión">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Título optimizado -->
+  <title>Japimax - Bowling, Juegos y Eventos Familiares en Santiago</title>
+  
+  <!-- Descripción y keywords mejorados -->
+  <meta name="description" content="Japimax es tu destino ideal para el bowling y eventos familiares en Santiago. Disfruta de promociones, juegos y servicios exclusivos para toda la familia.">
+  <meta name="keywords" content="bowling, Japimax, eventos familiares, Santiago, promociones, deportes, diversión, juegos, reservaciones">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Japimax">
+  <link rel="canonical" href="https://japimax.com/">
+
+  <!-- Preconexión a recursos externos -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Japimax - Bowling, Juegos y Eventos Familiares en Santiago">
+  <meta property="og:description" content="Descubre Japimax, tu destino para bowling y eventos familiares en Santiago. ¡Promociones y diversión para toda la familia!">
+  <meta property="og:image" content="https://japimax.com/IMG/logo-japimax.png">
+  <meta property="og:url" content="https://japimax.com/">
+  <meta property="og:site_name" content="Japimax">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Japimax - Bowling, Juegos y Eventos Familiares en Santiago">
+  <meta name="twitter:description" content="Descubre Japimax, tu destino para bowling y eventos familiares en Santiago. ¡Promociones y diversión para toda la familia!">
+  <meta name="twitter:image" content="https://japimax.com/IMG/logo-japimax.png">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="icon" href="IMG/logo-japimax.png" type="image/x-icon">
-</head>
 
+  <!-- Datos estructurados (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Japimax",
+    "description": "Japimax es el destino ideal para el bowling y eventos familiares en Santiago. Disfruta de promociones, juegos y reservaciones.",
+    "image": "https://japimax.com/IMG/logo-japimax.png",
+    "url": "https://japimax.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Almirante Latorre 310, Nivel 2",
+      "addressLocality": "Santiago",
+      "addressRegion": "RM",
+      "addressCountry": "CL"
+    },
+    "telephone": "+56992291179",
+    "openingHours": "Mo-Su 11:00-20:30"
+  }
+  </script>
+</head>
 <body>
   <!-- Barra de navegación -->
-  <section id="Inicio"> </section>
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <section id="Inicio"></section>
+  <nav class="navbar navbar-expand-lg fixed-top" aria-label="Barra de navegación principal">
     <div class="container-fluid">
       <a class="navbar-brand me-auto" href="#">
         <span class="logo-container">
-          <img src="IMG/logo-japimax.png" alt="Logo" width="50" height="50">
+          <img src="IMG/logo-japimax.png" alt="Logo Japimax" width="50" height="50">
         </span>
       </a>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav">
@@ -44,7 +88,8 @@
             <li class="nav-item">
               <a class="nav-link mx-lg-2 navbar-link" href="#precios-container">Precios</a>
             </li>
-            <a href="#servicios" class="serv-boton">Servicios</a>
+              <a href="#servicios" class="serv-boton">Servicios</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -54,63 +99,54 @@
       </button>
     </div>
   </nav>
-  <!-- Terminar NavBar -->
+  <!-- Termina NavBar -->
 
   <!-- Carousel -->
   <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
     </div>
-
     <div class="carousel-inner">
       <div class="carousel-item active c-item">
-        <img src="IMG/1.png" class="d-block w-100 c-img" alt="Slide 1">
+        <img src="IMG/1.png" class="d-block w-100 c-img" alt="Imagen slide 1" loading="eager">
         <div class="carousel-caption top-0 mt-4">
-          <h1 class="titulo display-1 fw-bolder text-capitalize">Bienvenido a japimax!</h1>
+          <h1 class="titulo display-1 fw-bolder text-capitalize">Bienvenido a Japimax!</h1>
           <p class="subtexto fs-3 text-uppercase">¡Diversión para toda la familia!</p>
         </div>
       </div>
       <div class="carousel-item c-item">
-        <img src="IMG/2.jpeg" class="d-block w-100 c-img" alt="Slide 2">
+        <img src="IMG/2.jpeg" class="d-block w-100 c-img" alt="Imagen slide 2" loading="lazy">
         <div class="carousel-caption top-0 mt-4">
           <h1 class="titulo display-1 fw-bolder text-capitalize">Cuida tu Joyita</h1>
           <p class="subtexto fs-3 text-uppercase">Estacionamiento Seguro</p>
-          <a href="#tujoyita" class="btn custom-btn px-4 py-2 fs-5">
-            AQUI
-          </a>
+          <a href="#tujoyita" class="btn custom-btn px-4 py-2 fs-5">AQUI</a>
         </div>
       </div>
       <div class="carousel-item c-item">
-        <img src="IMG/3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+        <img src="IMG/3.jpg" class="d-block w-100 c-img" alt="Imagen slide 3" loading="lazy">
         <div class="carousel-caption top-0 mt-4">
           <h1 class="titulo display-1 fw-bolder text-capitalize">Eventos Japimax</h1>
           <p class="subtexto fs-3 text-uppercase">Tus eventos en Japimax!</p>
-          <a href="#servicios" class="btn custom-btn px-4 py-2 fs-5">
-            AQUI
-          </a>
+          <a href="#servicios" class="btn custom-btn px-4 py-2 fs-5">AQUI</a>
         </div>
       </div>
       <div class="carousel-item c-item">
-        <img src="IMG/2.jpeg" class="d-block w-100 c-img" alt="Slide 2">
+        <img src="IMG/2.jpeg" class="d-block w-100 c-img" alt="Imagen slide 4" loading="lazy">
         <div class="carousel-caption top-0 mt-4">
           <h1 class="titulo display-1 fw-bolder text-capitalize">Cuida tu Joyita</h1>
           <p class="subtexto fs-3 text-uppercase">Estacionamiento Seguro</p>
-          <a href="#tujoyita" class="btn custom-btn px-4 py-2 fs-5">
-            AQUI
-          </a>
+          <a href="#tujoyita" class="btn custom-btn px-4 py-2 fs-5">AQUI</a>
         </div>
       </div>
       <div class="carousel-item c-item">
-        <img src="IMG/4.png" class="d-block w-100 c-img" alt="Slide 2">
+        <img src="IMG/4.png" class="d-block w-100 c-img" alt="Imagen slide 5" loading="lazy">
         <div class="carousel-caption top-0 mt-4">
           <h1 class="titulo display-1 fw-bolder text-capitalize">Nueva Membresia JAPIMAX!</h1>
-          <p class="subtexto fs-3 text-uppercase">Scanea el qr para ver los precios</p>
-          </a>
+          <p class="subtexto fs-3 text-uppercase">Scanea el QR para ver los precios</p>
         </div>
       </div>
     </div>
@@ -125,25 +161,18 @@
   </div>
   <!-- Carousel -->
 
-  <!-- ABOUT US -->
+  <!-- About Us -->
   <div class="about-us-container">
     <div class="about-us-content">
       <div class="responsive-cell-block img-one">
-        <img alt="" class="image-block bg-image" src="IMG/nosotros.jpeg">
+        <img src="IMG/nosotros.jpeg" alt="Nosotros" loading="lazy">
       </div>
       <div class="responsive-cell-block content-one">
-        <p class="text-blk section-head">
-          JAPIMAX, UN MUNDO DE ENTRETENCION
-        </p>
-
-        <!-- Subtítulo y párrafo introductorio más corto -->
+        <p class="text-blk section-head">JAPIMAX, UN MUNDO DE ENTRETENCION</p>
         <h3 class="text">Centro de Bowling Grajales</h3>
         <p class="text section-text">
-          Inversiones Monpla creó Japimax para el entretenimiento familiar basado en el <strong>Bowling</strong>. en
-          Grajales, está equipado con 13 pistas de la marca líder mundial <strong>Brunswick</strong>.
+          Inversiones Monpla creó Japimax para el entretenimiento familiar basado en el <strong>Bowling</strong> en Grajales, equipado con 13 pistas de la marca líder mundial <strong>Brunswick</strong>.
         </p>
-
-        <!-- Lista de servicios -->
         <h3 class="text">¿Qué Ofrecemos?</h3>
         <ul class="text">
           <li>Juegos Electrónicos</li>
@@ -151,45 +180,37 @@
           <li>Kiddies para los más pequeños</li>
           <li>Mesas de pool</li>
         </ul>
-
-        <!-- Información adicional dividida en secciones más cortas -->
         <h3 class="text">Ambiente Familiar y Servicios</h3>
         <p class="text section-text">
-          Destaca por su <strong>ambiente familiar</strong> y por la presencia de espacios de ¡Diversión!.
-          Japimax cuenta con estacionamiento seguro y servicio higiénico de calidad.
+          Destaca por su <strong>ambiente familiar</strong> y por sus espacios de ¡Diversión! Japimax cuenta con estacionamiento seguro y servicio higiénico de calidad.
         </p>
-
-        <!-- Información adicional de las instalaciones -->
         <h3 class="text">Conveniencia para toda la familia</h3>
         <p class="text section-text">
-          En Japimax <strong>República</strong> contamos con un Santa Isabel, brindando a las familias la posibilidad de
-          hacer sus compras y disfrutar de un momento de entretenimiento.
+          En Japimax <strong>República</strong> contamos con un Santa Isabel, ofreciendo a las familias la posibilidad de hacer sus compras y disfrutar de un momento de entretenimiento.
         </p>
       </div>
     </div>
   </div>
+  <!-- About Us -->
 
-
-  <!-- ABOUT US -->
-
-  <!-- EMPIEZA SERVICIOS -->
+  <!-- Servicios -->
   <section id="servicios"></section>
   <div class="servicios">
     <h2>Nuestro Servicios</h2>
   </div>
-
   <div class="container">
+    <!-- Card 1 -->
     <div class="card">
-      <img src="IMG/ArriendoPista.png" alt="Servicio 1">
+      <img src="IMG/ArriendoPista.png" alt="Arriendo de Pistas" loading="lazy">
       <div class="card-content">
         <h3>Arriendo de pistas</h3>
-        <p>“Ideal para entretencion familiar o competencias deportivas y eventos privados que necesiten un espacio
-          adecuado.”</p>
+        <p>“Ideal para entretencion familiar o competencias deportivas y eventos privados que necesiten un espacio adecuado.”</p>
         <p><i class="fa fa-phone"></i> +56 9 9229 1179</p>
       </div>
     </div>
+    <!-- Card 2 -->
     <div class="card">
-      <img src="IMG/Celebratu.png" alt="Servicio 2">
+      <img src="IMG/Celebratu.png" alt="Celebración de Cumpleaños" loading="lazy">
       <div class="card-content">
         <h3>Celebra tu cumpleaños con nosotros.</h3>
         <p>“Haz de tu cumpleaños una celebración inolvidable con actividades y diversión para todos.”</p>
@@ -197,25 +218,27 @@
         <a class="btn btn-info" href="#precios-container">Ver Información</a>
       </div>
     </div>
+    <!-- Card 3 -->
     <div class="card">
-      <img src="IMG/reserva.png" width="10px" height="10px" alt="Servicio 3">
+      <img src="IMG/reserva.png" alt="Reservas" loading="lazy">
       <div class="card-content">
         <h3>Reservas</h3>
         <p>“Aprovecha nuestra facilidad de reservas para grupos y eventos especiales. ¡Contáctanos!”</p>
         <p><i class="fa fa-phone"></i> +56 9 9229 1179</p>
       </div>
     </div>
+    <!-- Card 4 -->
     <section class="card" id="tujoyita">
-      <img src="IMG/2.jpeg" alt="Servicio 4">
+      <img src="IMG/2.jpeg" alt="Estacionamientos seguros" loading="lazy">
       <div class="card-content">
         <h3>Estacionamientos seguros</h3>
         <p>“Tu seguridad es nuestra prioridad. Disfruta de estacionamientos amplios y seguros para tu vehículo.”</p>
-        <button class="btn btn-info" id="info-button4" data-bs-toggle="modal" data-bs-target="#parking-modal">Ver
-          Información</button>
+        <button class="btn btn-info" id="info-button4" data-bs-toggle="modal" data-bs-target="#parking-modal">Ver Información</button>
       </div>
     </section>
+    <!-- Card 5 -->
     <div class="card">
-      <img src="IMG/smart-fit.png" alt="Servicio 5">
+      <img src="IMG/smart-fit.png" alt="Smartfit" loading="lazy">
       <div class="card-content">
         <h3>Smartfit</h3>
         <p>“Descubre cómo nuestros servicios adicionales pueden mejorar tu experiencia en el centro.”</p>
@@ -224,8 +247,7 @@
     </div>
   </div>
 
-  <!-- ESTE ES EL MODAL -->
-
+  <!-- Modal de Estacionamientos Seguros -->
   <div class="modal fade" id="parking-modal" tabindex="-1" aria-labelledby="modalParkingLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -237,10 +259,8 @@
           <h1>Contacto</h1>
           <ul>
             <li><i class="fa fa-phone"></i> Número de teléfono: +56 9 9229 1171</li>
-            <li><i class="fa fa-envelope"></i> Correo electrónico: japimax.estacionamiento@gmail.com
-            </li>
+            <li><i class="fa fa-envelope"></i> Correo electrónico: japimax.estacionamiento@gmail.com</li>
           </ul>
-
           <h1>¿Qué tenemos?</h1>
           <ul>
             <li><i class="fa fa-eye"></i> Vigilancia las 24 horas</li>
@@ -255,31 +275,30 @@
       </div>
     </div>
   </div>
+  <!-- Fin Modal -->
 
-  <!-- TERMINA SERVICIOS -->
-
-
-  <!-- GALERIA -->
+  <!-- Galería -->
   <section id="galeria-container">
     <h2>Galeria de fotos</h2>
     <div class="gallery">
-      <img src="IMG/galeria/1.jpeg" alt="Descripción 1">
-      <img src="IMG/galeria/2.jpeg" alt="Descripción 2">
-      <img src="IMG/galeria/3.jpeg" alt="Descripción 3">
-      <img src="IMG/galeria/4.jpeg" alt="Descripción 1">
-      <img src="IMG/1.png" alt="Descripción 3">
+      <img src="IMG/galeria/1.jpeg" alt="Galeria 1" loading="lazy">
+      <img src="IMG/galeria/2.jpeg" alt="Galeria 2" loading="lazy">
+      <img src="IMG/galeria/3.jpeg" alt="Galeria 3" loading="lazy">
+      <img src="IMG/galeria/4.jpeg" alt="Galeria 4" loading="lazy">
+      <img src="IMG/1.png" alt="Galeria 5" loading="lazy">
     </div>
   </section>
 
+  <!-- Overlay de la galería -->
   <div id="overlay">
-    <img id="overlayImage" src="" alt="">
+    <img id="overlayImage" src="" alt="Vista ampliada">
     <button id="closeButton" onclick="closeOverlay()">Cerrar</button>
     <button class="navButton" id="prevButton">&#9664;</button>
     <button class="navButton" id="nextButton">&#9654;</button>
   </div>
-  <!-- GALERIA -->
+  <!-- Fin Galería -->
 
-  <!-- PRECIOS -->
+  <!-- Precios -->
   <section id="precios-container">
     <div class="precios">
       <h2>Lista de Precios</h2>
@@ -305,7 +324,6 @@
           <span class="precio">$18.900</span>
         </div>
       </div>
-
       <!-- Pool Card -->
       <div class="precio-card">
         <h3>Pool</h3>
@@ -326,7 +344,6 @@
           <span class="precio">$3.500</span>
         </div>
       </div>
-
       <!-- Ping Pong Card -->
       <div class="precio-card">
         <h3>Ping Pong</h3>
@@ -347,9 +364,9 @@
           <span class="precio">$1.000</span>
         </div>
       </div>
-
+      <!-- Cumpleaños Card -->
       <div class="precio-card" id="cumple-card">
-        <h3>Cumpleaños en japimax</h3>
+        <h3>Cumpleaños en Japimax</h3>
         <div class="precio-content">
           <div class="precio-item">
             <span class="descripcion">Lunes a jueves valor x niño</span>
@@ -360,61 +377,51 @@
             <span class="precio">$9.000</span>
           </div>
         </div>
-
-        <button class="toggle-button" onclick="toggleCumpleContent()">
-          Ver más detalles
-        </button>
-
+        <button class="toggle-button" onclick="toggleCumpleContent()">Ver más detalles</button>
         <div id="cumple-content" class="hidden">
           <div class="precio-item">
             <span class="descripcion">Incluye:</span>
           </div>
           <ul>
-            <li>Espacio reservado para el evento donde puede adornar</li>
-            <li>1 hora de bowling 5 o 6 personas por pista</li>
+            <li>Espacio reservado para el evento donde se puede adornar</li>
+            <li>1 hora de bowling para 5 o 6 personas por pista</li>
             <li>1 torta de cumpleaños a elección (Piña o selva negra)</li>
-            <li>Duración del evento: Tres horas de duración en la instalación. 1 hora de bowling +2 horas en el espacio
-              reservado</li>
+            <li>Duración del evento: Tres horas (1 hora de bowling + 2 horas en el espacio reservado)</li>
           </ul>
         </div>
       </div>
     </div>
-    </div>
   </section>
+  <!-- Fin Precios -->
 
-  <!--FOOTER-->
+  <!-- Footer -->
   <section id="Foter"></section>
   <footer>
     <div class="footer-container">
       <div class="footer-columns">
         <div class="footer-column">
-          <a href="https://www.google.com/maps/place/Almirante+Latorre+310,+Santiago,+Regi%C3%B3n+Metropolitana/@-33.4517232,-70.6662962,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c501381fd229:0x5ac67808a627e781!8m2!3d-33.4517232!4d-70.6641075"
-            target="_blank" class="footer-link">
+          <a href="https://www.google.com/maps/place/Almirante+Latorre+310,+Santiago" target="_blank" class="footer-link">
             <i class="fa fa-map-marker"></i> Almirante Latorre 310, nivel 2, Barrio República, Santiago
           </a>
-          <p><i class="fa fa-phone me-"></i>
+          <p><i class="fa fa-phone"></i>
             <a href="tel:+56992291179">+56 9 9229 1179</a>
           </p>
           <p><i class="fa fa-clock-o"></i> Lunes a Domingo de 11:00 - 20:30</p>
         </div>
         <div class="footer-column">
-          <i class="fa fa-map-marker"> Cuida tu joyita</i>
-          <p>(Excluye motos) </p>
-          </a>
-          <p><i class="fa fa-phone me-"></i>
+          <i class="fa fa-map-marker"></i> Cuida tu joyita
+          <p>(Excluye motos)</p>
+          <p><i class="fa fa-phone"></i>
             <a href="tel:+56992291179">+56 9 9229 1179</a>
           </p>
           <p><i class="fa fa-envelope"></i>
             <a href="mailto:japimax.estacionamiento@gmail.com">japimax.estacionamiento@gmail.com</a>
           </p>
-
         </div>
       </div>
       <ul class="socials">
-        <li><a href="https://www.tiktok.com/@japimax1" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-tiktok"></i></a></li>
-        <li><a href="https://www.instagram.com/japimax_bowling/?hl=es" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.tiktok.com/@japimax1" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a></li>
+        <li><a href="https://www.instagram.com/japimax_bowling/?hl=es" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
       </ul>
     </div>
     <div class="footer-bottom">
@@ -422,12 +429,12 @@
       <p>Hecho con ❤️ <a href="https://www.instagram.com/prbleems/" target="_blank">Mateo</a> y Diego</p>
     </div>
   </footer>
-  <!--FOOTER-->
+  <!-- Fin Footer -->
 
+  <!-- Scripts -->
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
