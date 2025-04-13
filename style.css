@@ -654,3 +654,25 @@ h2 {
   outline: none;
   box-shadow: 0 0 0 4px rgba(255, 87, 51, 0.4);
 }
+
+.footer-credit {
+  color: #fff;            /* Color del texto del footer */
+  text-align: center;     /* Centrar el texto */
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;        /* Ajusta el tamaño que prefieras */
+}
+
+.heart-emoji {
+  color: #e63946;         /* Si quieres forzar el color del corazón */
+  margin: 0 4px;          /* Espacio a los lados del emoji */
+}
+
+.footer-link {
+  color: #1d1c1b;         /* Color del enlace (por ejemplo, un amarillo suave) */
+  text-decoration: none;  /* Para quitar el subrayado */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse, opcional */
+}
